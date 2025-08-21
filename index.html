@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>📘 Student Management System</h2>
+
+  <div class="form-container">
+    <h3>Add Student</h3>
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="roll" placeholder="Roll Number" required>
+      <input type="text" id="dept" placeholder="Department" required>
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+
+  <div class="list-container">
+    <h3>All Students</h3>
+    <button onclick="fetchStudents()">🔄 Refresh List</button>
+    <ul id="studentList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
